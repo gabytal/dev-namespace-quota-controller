@@ -1,0 +1,11 @@
+
+# the controller will look for namespaces names that contain this string
+NamespaceShouldContain="qa"
+
+ResourceQuotaName="1-pod-quota"
+
+# number of pods allowed in namespace
+ResourcePods="1"
+ResourceRequestsMemory="1Gi"
+ResourceLimitsMemory="1Gi"
+ResourceLimitsCPU="1"

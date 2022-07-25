@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: quota-controller
+  name: quota-controller
+  namespace: quota-controller
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: quota-controller
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: quota-controller
+    spec:
+      containers:
+        - image: gabytal333/quota-controller:latest
+          name: quota-controller
+          resources: {}
+      serviceAccountName: quota-controller
+status: {}

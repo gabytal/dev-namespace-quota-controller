@@ -1,0 +1,17 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: null
+  name: quota-controller-cr
+rules:
+  - apiGroups:
+      - ""
+    resources:
+      - namespaces
+      - resourcequotas
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - watch
