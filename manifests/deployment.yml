@@ -7,7 +7,7 @@ metadata:
   name: quota-controller
   namespace: quota-controller
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       app: quota-controller
