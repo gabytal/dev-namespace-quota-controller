@@ -17,6 +17,7 @@ spec:
       creationTimestamp: null
       labels:
         app: quota-controller
+        mylabel: blablabalbalba
     spec:
       containers:
         - image: gabytal333/quota-controller:latest
